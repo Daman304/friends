@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daman's self-test quiz</title>
+    <link rel="shortcut icon" href="friends.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        color: white
+    }
+
+    body {
+        background-color: rgba(0, 0, 0, 0.625);
+    }
+
+    .modal-content {
+        background-color: black;
+    }
+
+</style>
+
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white">Hello Guys... Its Daman here....</h5>
+                </div>
+                <div class="modal-body text-white">
+                    <p>Hope you all are doing Great...Before we start a small information about you...</p>
+                    <form method="post" class="form-inline" id="form-contact">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Name"><br>
+                        <label for="ADMNO" class="form-label">Admission Number:</label>
+                        <input type="text" name="ADMNO" id="ADMNO" class="form-control" placeholder="Admission Number(for student verification)"><br>
+                        <input type="submit" value="Submit" class="btn btn-info mx-auto d-block">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>There are a few questions about me and I would love to see your answers and its my promise that your name and answers won't be shared with anyone. Please try to be honest with your answers! So without wasting more of your time let us start with our questions. You Ready, right?.....</p>
+                </div>
+                <div class="container-fluid">
+                    <button type="button" class="btn btn-success close" data-bs-dismiss="modal">Yes!!!</button>
+                    <button type="button" onclick="window.close()" class="btn btn-danger" style="float:right;">No....</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="container">
+        <h4 class="text-center">So Lets begin with our questions....Hope You'll enjoy....</h4>
+    <form method="post" class="questions" id="questions">
+        <div class="q1">
+            <img src="https://cdn.pixabay.com/photo/2014/06/30/11/40/cupcakes-380178__340.jpg" alt="cake"
+                class="img1 img-responsive img-thumbnail mx-auto d-block my-2">
+            <h5 class="text-center">1)What is my BirthDate?🎂🎂(Please write your name here separated by birthdate with a comma. 🖋️🖋️)</h5>    
+            <input type="text" name="q1" id="q1" class="form-control mx-auto d-block w-50" placeholder="Enter Your Answer">
+        </div><br>
+        <div class="q2">
+            <img src="https://cdn.pixabay.com/photo/2015/08/08/00/07/graduation-879941__340.jpg" alt="cake"
+                class="img1 img-responsive img-thumbnail mx-auto d-block my-2">
+            <h5 class="text-center">2)In which year I first topped in our class(since 6th)🧠🧠?</h5>
+            <input type="text" name="q2" id="q2" class="form-control mx-auto d-block w-50" placeholder="Enter Your Answer">
+        </div><br>
+        <div class="q3">
+            <img src="https://cdn.pixabay.com/photo/2015/08/31/19/24/couple-915991__340.jpg" alt="cake"
+                class="img1 img-responsive img-thumbnail mx-auto d-block my-2">
+            <h5 class="text-center">3)Whom do You think I have a crush on(only honest answers)?❤️❤️‍🔥🔥</h5>
+            <input type="text" name="q3" id="q3" class="form-control mx-auto d-block w-50" placeholder="Enter Your Answer">
+        </div><br>
+        <div class="q4">
+            <img src="https://cdn.pixabay.com/photo/2015/06/25/17/56/people-821624__340.jpg" alt="cake"
+                class="img1 img-responsive img-thumbnail mx-auto d-block my-2">
+            <h5 class="text-center">4)What are the names of my 2 bestest friends?👯‍♀️👯‍♀️</h5>
+            <input type="text" name="q4" id="q4" class="form-control mx-auto d-block w-50" placeholder="Enter Your Answer">
+        </div><br>
+        <div class="q5">
+            <img src="https://cdn.pixabay.com/photo/2013/07/12/18/21/stabbed-153331__340.png" alt="cake"
+                class="img1 img-responsive img-thumbnail mx-auto d-block my-2">
+            <h5 class="text-center">5)Do You know the name of my ex? If yes, say it.💔💔</h5>
+            <input type="text" name="q5" id="q5" class="form-control mx-auto d-block w-50" placeholder="Enter Your Answer">
+        </div><br>
+        <div class="q6">
+            <img src="https://cdn.pixabay.com/photo/2015/09/05/21/51/reading-925589__340.jpg" alt="cake"
+                class="img1 img-responsive img-thumbnail mx-auto d-block my-2">
+            <h5 class="text-center">6)Which subject I am best at according to you?📚📚</h5>
+            <input type="text" name="q6" id="q6" class="form-control mx-auto d-block w-50" placeholder="Enter Your Answer">
+        </div><br>
+        <div class="q7">
+            <img src="https://cdn.pixabay.com/photo/2020/05/06/20/37/couple-5139112__340.png"
+                alt="cake" class="img2 img-responsive img-thumbnail mx-auto d-block my-2">
+            <h5 class="text-center">7)What was the name of my childhood crush?😁😁</h5>
+            <input type="text" name="q7" id="q7" class="form-control mx-auto d-block w-50" placeholder="Enter Your Answer">
+        </div><br>
+        <div class="q8">
+            <img src="https://cdn.pixabay.com/photo/2020/06/20/17/45/like-5321848__340.jpg"
+                alt="cake" class="img2 img-responsive img-thumbnail mx-auto d-block my-2">
+            <h5 class="text-center">8)What are the things you like and hate about me(write anything you want, No offense)?😊😊</h5>
+            <input type="text" name="q8" id="q8" class="form-control mx-auto d-block w-50" placeholder="Enter Your Answer">
+        </div><br>
+        <div class="q9">
+            <img src="https://cdn.pixabay.com/photo/2015/12/19/20/32/paper-1100254__340.jpg"
+                alt="cake" class="img2 img-responsive img-thumbnail mx-auto d-block my-2">
+            <h5 class="text-center">9)Is there anything you wanted to say to me but couldn't? If yes, just say it!😜😜</h5>
+            <input type="text" name="q9" id="q9" class="form-control mx-auto d-block w-50" placeholder="Enter Your Answer">
+        </div>
+        <div class="button my-4">
+            <input type="submit" value="Submit" class="btn btn-outline-warning mx-auto d-block">
+        </div>
+    </div>
+</form>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $("#myModal").modal('show');
+    });
+</script>
+</html>
