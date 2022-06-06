@@ -34,7 +34,7 @@
                 </div>
                 <div class="modal-body text-white">
                     <p>Hope you all are doing Great...Before we start a small information about you...</p>
-                    <form method="post" class="form-inline" id="form-contact">
+                    <form method="post" class="form-inline contact-form" id="form-contact">
                         <label for="name" class="form-label">Name:</label>
                         <input type="text" name="name" id="name" class="form-control" placeholder="Name"><br>
                         <label for="ADMNO" class="form-label">Admission Number:</label>
@@ -130,5 +130,31 @@
     $(document).ready(function () {
         $("#myModal").modal('show');
     });
+    const contactForm = document.querySelector('.contact-form');
+    let name = document.getElementById('name')
+    let ADMNO = document.getElementById('ADMNO')
+
+    contactForm.addEventListener('submit', (e)=>{
+        e.preventDefault()
+
+        let formData = {
+            name: name.value,
+            ADMNO: ADMNO.value
+        }
+        let xhr = new XMLHttpRequest();
+        xhr.open('POST', '/')
+        xhr.setRequestHeader('content-type', 'application/json')
+        xhr.onload = function(){
+            if(xhr.responseText == 'success'){
+                alert("Response sent")
+                name.value = '';
+                ADMNO.value = '';
+            }else{
+                alert("Something went wrong")
+            }
+        }
+        xhr.send(JSON.stringify(formData))
+    })
+
 </script>
 </html>
